@@ -1,12 +1,11 @@
+@font-face {
+  font-family: 'FrizQuadrataRegular';
+  src: url(../fonts/FrizQuadrataRegular.ttf);
+}
+
 body {
   background-color: #333;
   color: white;
   font-size: 50px;
-}
-
-#login {
-  @font-face {
-    font-family: 'FrizQuadrataItalic';
-    src: url(../fonts/FrizQuadrataItalic.ttf);
-  }
+  font-family: 'FrizQuadrataRegular';
 }
