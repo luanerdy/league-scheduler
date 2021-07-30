@@ -23,19 +23,45 @@ body {
   height: 100px;
   width: 250px;
 }
-.padrao {
-  color: rgb(5, 196, 202);
-  background-color: black;
-  height: 100px;
-  width: 250px;
-}
-.caixa {
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   color: #333;
   background-color: blueviolet;
   height: 738px;
   width: 638px;
 }
-#denis {
+
+.main-container img {
   height: 277px;
   width: 269px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  height: 350px;
+  width: 100%;
+}
+
+.main-container input {
+  height: 80px;
+  border-radius: 50px;
+  margin: 25px 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 193px;
+  height: 47px;
+  background-color: #cfae0b;
+  border-radius: 80px;
 }
