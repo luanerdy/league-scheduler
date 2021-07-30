@@ -5,7 +5,37 @@
 
 body {
   background-color: #333;
+  height: 100vh;
   color: white;
   font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
   font-family: 'FrizQuadrataRegular';
+}
+
+#logo {
+  color: rgb(18, 241, 36);
+  background-color: black;
+  height: 100px;
+  width: 250px;
+}
+.padrao {
+  color: rgb(5, 196, 202);
+  background-color: black;
+  height: 100px;
+  width: 250px;
+}
+.caixa {
+  color: #333;
+  background-color: blueviolet;
+  height: 738px;
+  width: 638px;
+}
+#denis {
+  height: 277px;
+  width: 269px;
 }
