@@ -10,6 +10,7 @@ signinForm.addEventListener('submit', (event) => {
 
     axios.post(`http://localhost:4000/auth/signin`, data)
     .then(res => {
+        localStorage.setItem('userData', JSON.stringify(res.data))
         window.open('/homepage');
     }).catch(err => {
         alert('Erro! Tente novamente!');
