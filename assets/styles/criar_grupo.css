@@ -1,0 +1,84 @@
+body{
+    background-color: #333;
+}
+input{
+    color: #F5CC00;
+    font-size: 17px;
+    text-align: center;
+}
+
+ul{
+    width: 300px;
+    height: 900px;
+    position: relative;
+    left:87%;
+
+}
+li{
+    color: #f7d00a;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    font-size: 26px;
+    margin-bottom: 10%;
+}
+
+/*                                                           montagem por ID */
+#perfil{
+    position: absolute;
+    margin-right: 20%;
+    top: 7%;
+    left: 39%;
+    width: 250px;
+    height: 250px;
+}
+#busca{
+    background-color: rgb(68, 67, 67);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+}
+#nome{
+    background-color: rgb(68, 67, 67);
+    position: relative;
+    left: 60%;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+}
+#descri{
+    background-color: rgb(68, 67, 67);
+    text-align: center;
+    color: #F5CC00;
+    border-color: black;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 500px;
+    height: 130px;
+
+}
+#titulo{
+    position:absolute;
+    top: 25%;
+    left: 90%;
+    color: #F5CC00;
+    font-size: 30px;
+}
+
+
+
+/*                                                             montagem por class */
+.entrada{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+
+/*                                                             modificar base*/
+::-webkit-input-placeholder{
+    color: #F5CC00;
+    font-size: 17px;
+    text-align: center;
+}
