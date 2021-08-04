@@ -27,18 +27,21 @@ li{
 #perfil{
     position: absolute;
     margin-right: 20%;
-    left: 37%;
+    top: 7%;
+    left: 39%;
+    width: 250px;
+    height: 250px;
 }
 #busca{
     background-color: rgb(68, 67, 67);
-    width: 300px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     border-radius: 10px 10px 10px 10px;
 }
 #nome{
     background-color: rgb(68, 67, 67);
     position: relative;
-    left: 25%;
+    left: 60%;
     width: 200px;
     height: 40px;
     border-radius: 10px 10px 10px 10px;
@@ -50,8 +53,8 @@ li{
     border-color: black;
     position: absolute;
     top: 70%;
-    left: 26%;
-    width: 600px;
+    left: 30%;
+    width: 500px;
     height: 130px;
 
 }
