@@ -13,14 +13,17 @@
   <body>
     <div class="main-container">
       <img src="./assets/images/logoninja.png" alt="" />
-      <div class="form">
-        <input id="nick" placeholder="nick/email:" />
-        <input id="senha" placeholder="senha:" />
+      <form class="form">
+        <input required id="nick" placeholder="nick/email:" />
+        <input type="password" required id="senha" placeholder="senha:" />
         <div class="btn-container">
           <button class="btn">OK</button>
           <a href="./cadastro/index.html" class="btn">CRIAR CONTA</a>
         </div>
-      </div>
+      </form>
     </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/scripts/signin.js"></script>
   </body>
 </html>
