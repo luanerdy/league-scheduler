@@ -26,79 +26,102 @@ body {
 }
 
 #container {
-  width: 100%;
+  max-width: 1440px;
+  max-height: 1024px;
+  display: flex;
+}
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 1035px;
 }
 
 #avatar {
   border-radius: 50%;
   width: 244px;
   height: 257px;
+  margin-top: 66px;
   margin-left: 65px;
-  margin-top: 65px;
 }
 
 #line {
+  position: absolute;
   width: 100%;
+  z-index: -1;
   height: 22px;
   background-color: var(--yellow);
-  margin-top: -155px;
-}
-
-#search-input-container {
-  display: flex;
-  margin-left: 178px;
-  margin-top: 183px;
-}
-
-#search-input {
-  text-indent: 9px;
-  background-color: var(--input);
-  font-size: 24px;
-  width: 388px;
-  height: 43.81px;
-}
-
-#search-btn {
-  background: none;
-  background-image: url(../images/lupa.png);
-  background-size: cover;
-  margin-left: 11.96px;
-  width: 43.81px;
-  height: 43.81px;
-}
-
-#set-date-container {
-  margin-top: 70.83px;
-}
-
-#set-date-container span {
-  color: var(--yellow);
-  display: block;
-  margin-left: 251px;
-  margin-bottom: 19px;
-  font-size: 30px;
-  font-weight: 200;
+  margin-top: -172px;
 }
 
 ::-webkit-input-placeholder {
   color: var(--yellow);
 }
 
+#search-input-container {
+  display: flex;
+  margin-top: 404px;
+  margin-left: -107px;
+  height: 33px;
+  width: 344px;
+}
+
+input {
+  background-color: var(--input);
+}
+
+#search-input {
+  width: 317px;
+  height: 33px;
+  font-size: 24px;
+  text-indent: 5px;
+}
+
+#search-btn {
+  background: none;
+  background-image: url(../images/lupa.png);
+  background-size: cover;
+  margin-left: 9px;
+  width: 32px;
+  height: 30px;
+}
+
+#set-date-container h4 {
+  color: var(--yellow);
+  margin-top: 75px;
+  margin-left: -52px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
 #date-input,
 #time-input {
-  background-color: var(--input);
   font-size: 32px;
-  text-align: center;
+  height: 59px;
+  margin-top: 31px;
 }
 
 #date-input {
-  margin-left: 141px;
-  width: 185px;
-  height: 59px;
+  font-size: 32px;
+  width: 224px;
+  margin-left: -141px;
+  margin-right: 104px;
 }
 
 #time-input {
-  margin-left: 104px;
   width: 107px;
   height: 59px;
+}
+
+aside {
+  width: 405px;
+  background-color: var(--aside);
+  height: 1024px;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 120px;
 }
