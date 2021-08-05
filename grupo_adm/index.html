@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/global.css" />
+    <!-- <link rel="stylesheet" href="../assets/styles/global.css" /> -->
     <link rel="stylesheet" href="../assets/styles/grupo_adm.css" />
     <title>Configurações do Grupo</title>
   </head>
   <body>
-    <div class="container">
+    <div id="container">
       <header>
-        <img src="../assets/images/nin.jpg" alt="" />
-        <hr class="line" />
+        <img id="avatar" src="../assets/images/nin.jpg" alt="" />
+        <hr id="line" />
       </header>
-      <section class="configs">
-        <input
-          class="search__input"
-          type="text"
-          placeholder="Adicionar pessoas"
-        />
-        <span>Marcar horário</span>
-        <input type="date" name="date" id="date" />
-        <input type="time" name="time" id="time" />
+      <section>
+        <div id="search-input-container">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Adicionar pessoas"
+          />
+          <button type="button" id="search-btn"></button>
+        </div>
+        <div id="set-date-container">
+          <span>Marcar horário</span>
+          <input type="text" name="date" id="date-input" placeholder="dd/mm/aaaa" />
+          <input type="text" name="time" id="time-input" placeholder="00:00" />
+        </div id="">
       </section>
       <aside class="participants">
-        <ul class="participants__list">
+        <ul class="participants-list">
           <!-- Cria li's através da API de participantes -->
         </ul>
       </aside>
