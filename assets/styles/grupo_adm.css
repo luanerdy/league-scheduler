@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'FrizQuadrataRegular';
+  src: url(../fonts/FrizQuadrataRegular.ttf);
+}
+
+:root {
+  --grey: #333;
+  --yellow: #f5cc00;
+  --aside: rgb(245, 204, 0, 0.04);
+  --input: rgba(196, 196, 196, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: 'FrizQuadrataRegular', sans-serif;
+  height: 100vh;
+  color: white;
+  font-size: 50px;
+}
+
+#container {
+  width: 100%;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 244px;
+  height: 257px;
+  margin-left: 65px;
+  margin-top: 65px;
+}
+
+#line {
+  width: 100%;
+  height: 22px;
+  background-color: var(--yellow);
+  margin-top: -155px;
+}
+
+#search-input-container {
+  display: flex;
+  margin-left: 178px;
+  margin-top: 183px;
+}
+
+#search-input {
+  text-indent: 9px;
+  background-color: var(--input);
+  font-size: 24px;
+  width: 388px;
+  height: 43.81px;
+}
+
+#search-btn {
+  background: none;
+  background-image: url(../images/lupa.png);
+  background-size: cover;
+  margin-left: 11.96px;
+  width: 43.81px;
+  height: 43.81px;
+}
+
+#set-date-container {
+  margin-top: 70.83px;
+}
+
+#set-date-container span {
+  color: var(--yellow);
+  display: block;
+  margin-left: 251px;
+  margin-bottom: 19px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+  color: var(--yellow);
+}
+
+#date-input,
+#time-input {
+  background-color: var(--input);
+  font-size: 32px;
+  text-align: center;
+}
+
+#date-input {
+  margin-left: 141px;
+  width: 185px;
+  height: 59px;
+}
+
+#time-input {
+  margin-left: 104px;
+  width: 107px;
+  height: 59px;
+}
