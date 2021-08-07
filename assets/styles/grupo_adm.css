@@ -32,8 +32,7 @@ body {
 
 section {
   display: flex;
-  position: relative;
-  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
@@ -58,37 +57,17 @@ section {
   color: var(--yellow);
 }
 
-#search-input-container {
-  display: flex;
-  margin-top: 404px;
-  margin-left: -107px;
-  height: 33px;
-  width: 344px;
-}
-
 input {
   background-color: var(--input);
 }
 
-#search-input {
-  width: 317px;
-  height: 33px;
-  font-size: 24px;
-  text-indent: 5px;
-}
-
-#search-btn {
-  background: none;
-  background-image: url(../images/lupa.png);
-  background-size: cover;
-  margin-left: 9px;
-  width: 32px;
-  height: 30px;
+#set-date-container {
+  margin-top: -70px;
 }
 
 #set-date-container h4 {
   color: var(--yellow);
-  margin-top: 75px;
+  margin-top: 550px;
   margin-left: -52px;
   font-size: 30px;
   font-weight: 200;
@@ -96,6 +75,7 @@ input {
 
 #date-input,
 #time-input {
+  color: var(--yellow);
   font-size: 32px;
   height: 59px;
   margin-top: 31px;
@@ -126,7 +106,7 @@ aside h4 {
   color: var(--yellow);
   text-align: center;
   font-size: 36px;
-  margin-top: 120px;
+  margin-top: 115px;
 }
 
 #participants-list {
