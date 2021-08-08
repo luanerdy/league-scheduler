@@ -25,6 +25,8 @@ li{
 
 /*                                                           montagem por ID */
 #perfil{
+    background-color: azure;
+    border-radius: 200px 200px 200px 200px;
     position: absolute;
     margin-right: 20%;
     top: 7%;
@@ -64,6 +66,25 @@ li{
     left: 90%;
     color: #F5CC00;
     font-size: 30px;
+}
+#ta_poxa{
+    width: 100px;
+    position: absolute;
+    right: 0.1%;
+    top: 4%;
+}
+#base2{
+    background-color: #F5CC00;
+    opacity: 0.1;
+    width: 1450px;
+    height: 100px;
+}
+#base1{
+    background-color: rgb(49, 33, 2);
+    width: 1470px;
+    height: 30px;
+    position: absolute;
+    top: 12%;
 }
 
 
