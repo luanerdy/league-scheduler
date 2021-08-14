@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'FrizQuadrataRegular';
+  src: url(../fonts/FrizQuadrataRegular.ttf);
+}
+
+:root {
+  --grey: #333;
+  --yellow: #f5cc00;
+  --aside: rgb(245, 204, 0, 0.04);
+  --input: rgba(196, 196, 196, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: 'FrizQuadrataRegular', sans-serif;
+  height: 100vh;
+  color: white;
+  font-size: 50px;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 244px;
+  height: 257px;
+  margin-top: 66px;
+  margin-left: 65px;
+}
+
+#line {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 22px;
+  background-color: var(--yellow);
+  margin-top: -172px;
+}
+
+::-webkit-input-placeholder {
+  color: var(--yellow);
+}
+
+input {
+  background-color: var(--input);
+}
+
+#set-date-container {
+  margin-top: -70px;
+}
+
+#set-date-container h4 {
+  color: var(--yellow);
+  margin-top: 550px;
+  margin-left: -52px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+#date-input,
+#time-input {
+  color: var(--yellow);
+  font-size: 32px;
+  height: 59px;
+  margin-top: 31px;
+}
+
+#date-input {
+  font-size: 32px;
+  width: 224px;
+  margin-left: -141px;
+  margin-right: 104px;
+}
+
+#time-input {
+  width: 107px;
+  height: 59px;
+}
+
+aside {
+  width: 45%;
+  background-color: var(--aside);
+  height: 1024px;
+  position: relative;
+  right: 0;
+}
+
+aside h4 {
+  font-style: italic;
+  color: var(--yellow);
+  text-align: center;
+  font-size: 36px;
+  margin-top: 115px;
+}
+
+#participants-list {
+  margin-top: 50px;
+}
+
+.participant {
+  color: var(--yellow);
+  font-size: 36px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+}

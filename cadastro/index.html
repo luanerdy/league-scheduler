@@ -14,22 +14,26 @@
       <div id="img">
         <img src="../assets/images/cadastro.png" alt="" />
       </div>
-      <div class="form">
+      <form class="form">
         <div class="form-subcontainer1">
-          <input placeholder="NAME" />
-          <input placeholder="NICK" />
-          <input placeholder="E-MAIL" />
+          <input id="name" required placeholder="NAME" />
+          <input id="nick" required placeholder="NICK" />
+          <input type="email" id="email" required placeholder="E-MAIL" />
+          <input id="avatar" required placeholder="AVATAR" />
         </div>
         <div class="form-subcontainer2">
           <div class="pass-input">
-            <input type="text" placeholder="SENHA" />
-            <input type="text" placeholder="CONFIRMAR SENHA" />
+            <input type="password" id="password" required type="text" placeholder="SENHA" />
+            <input type="password" id="confirm-password" required type="text" placeholder="CONFIRMAR SENHA" />
           </div>
           <div class="btn">
             <button type="submit">CRIAR</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../assets/scripts/signup.js"></script>
   </body>
 </html>
