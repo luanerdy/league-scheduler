@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>League Scheduler</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/criar_grupo.css">
-</head>
-<body>
-    <a href="../perfil"><image id="perfil" src="../assets/images/login.png"/></a>
-    
-    <div class="entrada">
-        
-        <input id="busca" placeholder="Buscar"/>
-        <input id="nome" placeholder="Nome do Grupo"/><br>
+    <link rel="stylesheet" href="../assets/styles/reset.css" />
+    <link rel="stylesheet" href="../assets/styles/global.css" />
+    <link rel="stylesheet" href="../assets/styles/criar_grupo.css" />
+  </head>
+  <body>
+    <div id="geral">
+      <div class="subgeral">
+        <div id="img">
+          <div>
+            <img src="../assets/images/cadastro.png" alt="" />
+          </div>
+        </div>
+        <div id="container-geral">
+          <div id="container1">
+            <div class="subcontainer1">
+              <p>adicionar amigos</p>
+              <div>
+                <input type="text" placeholder="buscar" />
+                <button type="submit">
+                  <img src="../assets/images/" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="subcontainer2"><p>nome do grupo</p></div>
+          </div>
+          <div id="container2">
+            <div class="subcontainer3">
+              <textarea id="descri" placeholder="Descrição"></textarea>
+            </div>
+            <div class="subcontainer4"></div>
+          </div>
+        </div>
+      </div>
+      <div id="inter">
+        <h1>amigos</h1>
+      </div>
     </div>
-    
-    <p id="titulo">Amigos</p>
-    <ul>
-        <li>Rafa</li>
-        <li>Luan</li>
-        <li>Vitor</li>
-        <li>Aslam</li>
-    </ul>
-
-    <textarea id="descri" placeholder="Descrição"></textarea>
-</body>
+  </body>
 </html>
