@@ -8,7 +8,7 @@ signinForm.addEventListener('submit', (event) => {
         password: info[1].value
     };
 
-    axios.post(`http://localhost:4000/auth/signin`, data)
+    axios.post(`https://leaguescheduler-api.herokuapp.com/auth/signin`, data)
     .then(res => {
         localStorage.setItem('userData', JSON.stringify(res.data))
         window.open('/homepage');

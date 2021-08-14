@@ -15,7 +15,7 @@ signupForm.addEventListener('submit', (event) => {
         return alert('Os campos de senha devem ser iguais!');
     };
 
-    axios.post(`http://localhost:4000/auth/signup`, data)
+    axios.post(`https://leaguescheduler-api.herokuapp.com/auth/signup`, data)
     .then(res => {
         alert('Usuário cadastrado com sucesso');
         window.open('/');
