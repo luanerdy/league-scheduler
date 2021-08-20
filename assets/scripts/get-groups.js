@@ -17,7 +17,10 @@ const getGroups = () => {
                     <h2>${group.name}</h2>
                 </div>`;
 			});
-		});
+		})
+        .catch(err => {
+            console.log(err);
+        });
 };
 
 getGroups();

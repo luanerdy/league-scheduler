@@ -20,7 +20,10 @@ const handleSubmit = event => {
     axios.post('https://leaguescheduler-api.herokuapp.com/groups/new', data, config)
     .then(res => {
         window.location.href = '/';
-    });
+    })
+    .catch(err => {
+        console.log(err);
+    });;
 };
 
 createGroupForm.addEventListener('submit', handleSubmit);
