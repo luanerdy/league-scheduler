@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>League Scheduler</title>
-    <link rel="stylesheet" href="../assets/styles/reset.css" />
-    <link rel="stylesheet" href="../assets/styles/global.css" />
-    <link rel="stylesheet" href="../assets/styles/criar_grupo.css" />
-  </head>
-  <body>
-    <div id="geral">
-      <div class="subgeral">
-        <div id="img">
-          <div>
-            <img src="../assets/images/cadastro.png" alt="" />
-          </div>
-        </div>
-        <div id="container-geral">
-          <div id="container1">
-            <div class="subcontainer1">
-              <p>adicionar amigos</p>
-              <div>
-                <input type="text" placeholder="buscar" />
-                <button type="submit">
-                  <img src="../assets/images/" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="subcontainer2"><p>nome do grupo</p></div>
-          </div>
-          <div id="container2">
-            <div class="subcontainer3">
-              <textarea id="descri" placeholder="Descrição"></textarea>
-            </div>
-            <div class="subcontainer4"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>League Scheduler</title>
+  <link rel="stylesheet" href="../assets/styles/reset.css" />
+  <link rel="stylesheet" href="../assets/styles/global.css" />
+  <link rel="stylesheet" href="../assets/styles/criar_grupo.css" />
+</head>
+
+<body>
+  <div id="geral">
+    <div class="subgeral">
+      <div id="img">
+        <div>
+          <img src="../assets/images/cadastro.png" alt="" />
         </div>
       </div>
-      <div id="inter">
-        <h1>amigos</h1>
-      </div>
+      <form id="container-geral">
+        <div id="container1">
+          <div class="subcontainer1">
+            <p>adicionar amigos</p>
+            <div>
+              <input required type="text" placeholder="nome do grupo" id="name" />
+              <input required type="text" placeholder="link da imagem" id="image" />
+              <img src="../assets/images/" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="container2">
+          <div class="subcontainer3">
+            <textarea required id="descri" placeholder="Descrição"></textarea>
+            <button type="submit">Criar grupo</button>
+          </div>
+          <div class="subcontainer4"></div>
+        </div>
+      </form>
     </div>
-  </body>
+    <div id="inter">
+      <h1>amigos</h1>
+    </div>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../assets/scripts/create-group.js"></script>
+</body>
+
 </html>

@@ -10,7 +10,7 @@ signinForm.addEventListener('submit', (event) => {
 
     axios.post(`https://leaguescheduler-api.herokuapp.com/auth/signin`, data)
     .then(res => {
-        localStorage.setItem('userData', JSON.stringify(res.data))
+        localStorage.setItem('userData', JSON.stringify(res.data));
         window.open('/homepage');
     }).catch(err => {
         alert('Erro! Tente novamente!');
